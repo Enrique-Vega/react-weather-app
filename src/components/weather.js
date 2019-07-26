@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
 
 class Weather extends Component {
-    constructor(props) {
-        super(props);
-      }
+
     
     render() {
-    const { city, country, temperature, humidity, description } = this.props
+    // const { city, country, temperature, humidity, description } = this.props
         return (
         <div>
             <ul>
-                <li>City: {city}</li>
-                <li>Country: {country}</li>
-                <li>Temperature: {temperature}</li>
-                <li>Humidity: {humidity}</li>
-                <li>Description: {description}</li>
+                <li>City: {this.props.city}</li>
+                <li>Country: {this.props.country}</li>
+                <li>Temperature: {this.props.emperature}</li>
+                <li>Humidity: {this.props.humidity}</li>
+                <li>Description: {this.props.description}</li>
             </ul>
         </div>
         )
